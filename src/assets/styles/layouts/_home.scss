@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container {
+  background-color: whitesmoke;
+  min-height: 100vh;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+  background-color: teal;
+  min-width: 100vh;
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    min-height: 50px;
+
+    li {
+      flex: 1;
+      text-align: center;
+
+      a {
+        text-decoration: none;
+        color: whitesmoke;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      a:visited {
+        color: whitesmoke;
+      }
+    }
+  }
+}
+
+.clock {
+  flex: 1;
+  background-color: black;
+  color: aqua;
+  min-width: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 300px;
+  justify-content: center;
+  align-items: center;
+
+  span {
+    font-size: 80px;
+  }
+
+  button {
+    width: 200px;
+  }
+}
+
+.squares {
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  min-width: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+
+  .example {
+    flex: 1 1 100px;
+    min-height: 200px;
+    min-width: 100vh;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    button {
+      height: 50px;
+    }
+  }
+
+  .guesses {
+    padding: 20px;
+    flex: 5 1 200px;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(2, 100px);
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+
+    .square {
+      height: 100px;
+      width: 100px;
+      border: 2px solid white;
+    }
+  }
+
+  .results {
+    flex: 1;
+    color: whitesmoke;
+    text-align: center;
+
+    #correctas {
+      color: greenyellow;
+    }
+
+    #incorrectas {
+      color: red;
+    }
+  }
+}
