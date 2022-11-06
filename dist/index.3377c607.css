@@ -47,7 +47,6 @@ nav ul li a:visited {
 
 .clock {
   color: #0ff;
-  min-width: 100%;
   min-height: 300px;
   background-color: #000;
   flex-direction: column;
@@ -66,7 +65,6 @@ nav ul li a:visited {
 }
 
 .squares {
-  min-width: 100%;
   background-color: #000;
   flex-direction: column;
   flex: 1;
@@ -77,7 +75,6 @@ nav ul li a:visited {
 
 .squares .example {
   min-height: 200px;
-  min-width: 100vh;
   background-color: #00f;
   flex: 100px;
   justify-content: center;
